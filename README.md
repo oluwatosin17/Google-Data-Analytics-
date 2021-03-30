@@ -112,3 +112,51 @@ creating new ways of modeling and understanding the unknown
 by using raw data. Here's a good way to think about it. Data scientists create new questions
 using data, while analysts find answers to existing questions by
 creating insights from data sources. 
+
+**How data informs better decisions**
+One of the most powerful ways you
+can put data to work is with data- driven decision-making. Data-driven decision-making is defined as
+using facts to guide business strategy.
+
+
+ - The first step in data-driven decision-
+making is figuring out the business need. Usually, this is a problem
+that needs to be solved. For example, a problem could be a new
+company needing to establish better brand recognition, so it can compete with
+bigger, more well known competitors. Or maybe an organization wants to improve
+a product and needs to figure out how to source parts from a more sustainable
+or ethically responsible supplier. Or, it could be a business trying to
+solve the problem of unhappy employees, low levels of engagement,
+satisfaction and retention. Whatever the problem is, once it's
+defined, a data analyst finds data, analyzes it and uses it to uncover trends,
+patterns and relationships. Sometimes the data-driven strategy will
+build on what's worked in the past. Other times, it can guide a business
+to branch out in a whole new direction. Let's look at a real world example. Think about a music or
+movie streaming service. How do these companies know what
+people want to watch or listen to, and how do they provide it? While using data-driven decision-making, they gather information about what their
+customers are currently listening to, analyze it, then use the insights
+they've gained to make suggestions for things people will most
+likely enjoy in the future. This keeps customers happy and coming back for more, which in turn
+means more revenue for the company. Another example of data-driven decision-
+making can be seen in the rise of e-commerce. It wasn't long ago that most purchases
+were made in a physical store, but the data showed people's
+preferences were changing. So a lot of companies created entirely
+new business models that remove the physical store, and let people
+shop right from their computers or mobile phones with products
+delivered right to their doorstep. In fact, data-driven decision-
+making can be so powerful, it can make entire
+business methods obsolete. For example, data helped companies
+completely move away from corded phones and
+replace them with mobile phones. By ensuring that data is built
+into every business strategy, data analysts play a critical role
+in their company success, but it's important to note that no matter how
+valuable data-driven decision-making is, data alone will never be as powerful
+as data combined with human experience, observation, and sometimes even intuition. To get the most out of data-driven
+decision-making, it's important to include insights from people who are familiar
+with the business problem. These people are called subject matter
+experts, and they have the ability to look at the results of data analysis and
+identify any inconsistencies, make sense of gray areas, and
+eventually validate choices being made. Organizations that work this way put data
+at the heart of every business strategy, but also benefit from
+the insights of their people. 
+
