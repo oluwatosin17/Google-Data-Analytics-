@@ -160,3 +160,15 @@ eventually validate choices being made. Organizations that work this way put dat
 at the heart of every business strategy, but also benefit from
 the insights of their people. 
 
+* Analysts use data-driven decision-making and follow a step-by-step process. You have learned that there are six steps to this process:
+  * Ask questions and define the problem.
+  * Prepare data by collecting and storing the information.
+  * Process data by cleaning and checking the information.
+  * Analyze data to find patterns, relationships, and trends.
+  * Share data with your audience.
+  * Act on the data and use the analysis results.
+Analyzing facts is a key part of data-driven decision making because facts lead to patterns that help guide the decisions we make — big and small. Data-driven decision-making is rooted in using facts to guide business strategy. As an analyst, you will be tasked with creating a verified story about the data and sharing it with stakeholders. These stakeholders use your story to make choices based on facts, and make sure that the company is focused on the right goals. 
+
+*Gut instinct can be a problem*
+- There are other factors influencing the decision making process, too, though. You may have read mysteries where the detective used their gut instinct, and followed a hunch that helped them solve the case. Gut instinct is an intuitive understanding of something with little or no explanation. This isn’t always something conscious; we often pick up on signals without even realizing. You just have a “feeling” it’s right.
+
