@@ -167,8 +167,91 @@ the insights of their people.
   * Analyze data to find patterns, relationships, and trends.
   * Share data with your audience.
   * Act on the data and use the analysis results.
-Analyzing facts is a key part of data-driven decision making because facts lead to patterns that help guide the decisions we make — big and small. Data-driven decision-making is rooted in using facts to guide business strategy. As an analyst, you will be tasked with creating a verified story about the data and sharing it with stakeholders. These stakeholders use your story to make choices based on facts, and make sure that the company is focused on the right goals. 
+- Analyzing facts is a key part of data-driven decision making because facts lead to patterns that help guide the decisions we make — big and small. Data-driven decision-making is rooted in using facts to guide business strategy. As an analyst, you will be tasked with creating a verified story about the data and sharing it with stakeholders. These stakeholders use your story to make choices based on facts, and make sure that the company is focused on the right goals. 
 
 *Gut instinct can be a problem*
 - There are other factors influencing the decision making process, too, though. You may have read mysteries where the detective used their gut instinct, and followed a hunch that helped them solve the case. Gut instinct is an intuitive understanding of something with little or no explanation. This isn’t always something conscious; we often pick up on signals without even realizing. You just have a “feeling” it’s right.
 
+- But for data analysts, just trusting our gut instinct can be a problem. At the heart of data-driven decision making is data, so we always want to focus on the data to ensure that we’re making informed decisions. When we make decisions based on our gut instinct without any data to back it up, it can lead to mistakes. Or worse, when we ignore the data based on our own personal experiences, we can create bias in our analysis. Businesses that rely on gut instinct to make decisions often make bad choices because they aren’t considering the story their data is actually telling. 
+
+- Instead of relying on gut instinct, you can build your business knowledge and experience over time. The more you know about how a business works, the easier it will be to figure out what that business needs. And that business knowledge and experience can also help you identify errors and gaps in your data and communicate your findings. For example, a detective might be able to crack open a case because they remember an old case just like the one they’re solving today. Their past experience could help them make a connection that no one else would notice. Maybe their unique background knowledge helps them discover someone is lying, or it could help them uncover new clues. Your business knowledge and experience may help you understand problems intuitively. But, unlike gut instinct, it will give you more than just a feeling to go on.
+
+- Data + business knowledge = mystery solved
+   * Blending facts and data with your business knowledge will be a common part of your process. The key is figuring out the exact mix of data and business knowledge for each particular project. A lot of times it will depend on the goals of your analysis. That is why analysts often ask, “How do I define success for this project?”
+
+- Successful analysis needs to be accurate, and fast enough to help decision-makers. So try asking yourself these questions about a project:
+  - What kind of results are needed?
+  - Who will be informed?
+  - Am I answering the question being asked?
+  - How quickly does a decision need to be made?
+
+- For example, if you are working on a rush project, you might need to rely on your own knowledge and experience more than usual. There just isn’t enough time to thoroughly analyze all of the available data. But if you get a project that involves plenty of time and resources, then the best strategy would be to be more data-driven. It’s up to you, the data analyst, to think about the situation and make the best possible choice. You will probably blend facts and knowledge a million different ways over the course of your data analytics career. And the more you practice, the better you will get at finding that perfect blend.
+
+#### Origins of the data analysis process
+- Data analysis life cycle—the process of going from data to decision. Data goes through several phases as it gets created, consumed, tested, processed, and reused. With a life cycle model, all key team members can drive success by planning work both up front and at the end of the data analysis process. While the data analysis life cycle is well known among experts, there isn't a single defined structure of those phases.There might not be one single architecture that’s uniformly followed by every data analysis expert, but there are some shared fundamentals in every data analysis process. 
+  - Ask: Business Challenge/Objective/Question
+  - Prepare: Data generation, collection, storage, and data management
+  - Process: Data cleaning/data integrity
+  - Analyze: Data exploration, visualization, and analysis
+  - Share: Communicating and interpreting results 
+  - Act:  Putting your insights to work to solve the problem
+
+- Understanding this process—and all of the iterations that helped make it popular—will be a big part of guiding your own analysis and your work in this program. Let’s go over a few other variations of the data analysis life cycle.
+
+EMC's data analysis life cycle
+EMC Corporation's data analytics life cycle is cyclical with six steps:
+- Discovery
+- Pre-processing data
+- Model planning
+- Model building
+- Communicate results
+- Operationalize
+
+- EMC Corporation is now Dell EMC. This model, created by David Dietrich, reflects the cyclical nature of real-world projects. The phases aren’t static milestones; each step connects and leads to the next, and eventually repeats. Key questions help analysts test whether they have accomplished enough to move forward and ensure that teams have spent enough time on each of the phases and don’t start modeling before the data is ready. It is a little different from the data analysis life cycle this program is based on, but it has some core ideas in common: the first phase is interested in discovering and asking questions; data has to be prepared before it can be analyzed and used; and then findings should be shared and acted on.
+
+** SAS' iterative life cycle **
+- An iterative life cycle was created by a company called SAS, a leading data analytics solutions provider. It can be used to produce repeatable, reliable, and predictive results: 
+ - Ask
+ - Prepare
+ - Explore
+ - Model
+ - Implement
+ - Act
+ - Evaluate
+- The SAS model emphasizes the cyclical nature of their model by visualizing it as an infinity symbol. Their life cycle has seven steps, many of which we have seen in the other models, like Ask, Prepare, Model, and Act. But this life cycle is also a little different; it includes a step after the act phase designed to help analysts evaluate their solutions and potentially return to the ask phase again. 
+
+**Project-based data analytics life cycle **
+- A project-based data analytics life cycle has five simple steps:
+ - Identifying the problem
+ - Designing data requirements
+ - Pre-processing data
+ - Data analysis
+ - Data visualizing
+
+- This data analytics project life cycle was developed by Vignesh Prajapati. It doesn’t include the sixth phase, or what we have been referring to as the Act phase. However, it still covers a lot of the same steps as the life cycles we have already described. It begins with identifying the problem, preparing and processing data before analysis, and ends with data visualization.
+
+- Big data analytics life cycle
+  - Authors Thomas Erl, Wajid Khattak, and Paul Buhler proposed a big data analytics life cycle in their book, Big Data Fundamentals: Concepts, Drivers & Techniques. Their life cycle suggests phases divided into nine steps:
+   - Business case evaluation
+   - Data identification
+   - Data acquisition and filtering
+   - Data extraction
+   - Data validation and cleaning 
+   - Data aggregation and representation
+   - Data analysis
+   - Data visualization
+   - Utilization of analysis results
+
+- This life cycle appears to have three or four more steps than the previous life cycle models. But in reality, they have just broken down what we have been referring to as Prepare and Process into smaller steps. It emphasizes the individual tasks required for gathering, preparing, and cleaning data before the analysis phase.
+
+- Data life cycle based on research
+  - One final data life cycle informed by Harvard University research has eight phases:
+   - Generation
+   - Collection
+   - Processing
+   - Storage 
+   - Management
+   - Analysis
+   - Visualization
+   - Interpretation
+This version includes storage, management, and interpretation phases, and excludes the Act phase that has appeared in other models. 
