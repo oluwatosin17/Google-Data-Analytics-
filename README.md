@@ -9,7 +9,7 @@
 - [**Week 5**](https://docs.google.com/document/d/1ZD7mmwnX3f_SZdmfrVmEMgKxVX_05kzp7q5YCJoh9E4/edit?usp=drivesdk) 
 
 ## Ask Questions to Make Data-Driven Decisions
-- [**Ask Questions to Make Data-Driven Decisions  Week 1](https://docs.google.com/document/d/1lBtMCkacd4OO_onQA4eE8c6rI8bj5rmt_nJPc3RZzdM/edit?usp=drivesdk) 
+- [**Ask Questions to Make Data-Driven Decisions  Week 1**](https://docs.google.com/document/d/1lBtMCkacd4OO_onQA4eE8c6rI8bj5rmt_nJPc3RZzdM/edit?usp=drivesdk) 
 
 ## Data-Analysis-with-R-Programming
 - [link](https://github.com/oluwatosin17/Data-Analysis-with-R-Programming-) 
