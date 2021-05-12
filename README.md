@@ -7,3 +7,5 @@
 - [**Week 3 Phases of Data Life Cycle**](https://docs.google.com/document/d/1lx7LY9XeZhC6W0bis4fMYooHS-i0TJQFByvump1IGqE/edit?usp=drivesdk) 
 - [**Week 4**](https://docs.google.com/document/d/1vb0HGrzziV89OSg6Nh070shPj_UfXIsxjPOVx4EnTo8/edit?usp=drivesdk) 
 - [**Week 5**](https://docs.google.com/document/d/1ZD7mmwnX3f_SZdmfrVmEMgKxVX_05kzp7q5YCJoh9E4/edit?usp=drivesdk) 
+
+## Ask Questions to Make Data-Driven Decisions
