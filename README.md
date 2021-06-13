@@ -14,6 +14,12 @@
 - [**Ask Questions to Make Data-Driven Decisions  Week 3**](https://docs.google.com/document/d/1kl4fg50Nm-GzCftNbCarGRgyZqA1uEj3vu-xsuu1CTg/edit?usp=drivesdk)
 - [**Ask Questions to Make Data-Driven Decisions  Week 4**](https://docs.google.com/document/d/1PIKW46KBhOJXs4wFoWrSxbeOGdKn52jDxr_Oc8lE1wg/edit?usp=drivesdk) 
 
+## Prepare Data for Exploration
+- [**Prepare Data for Exploration Week 1**](https://docs.google.com/document/d/17ot2jkYrLnXIB_qDWNplg0NMQSWagQ_jZ5VCf4wLAAA/edit?usp=drivesdk) 
+- [**Prepare Data for Exploration Week 2**](https://docs.google.com/document/d/1IXLLtBcSYfSI95KQep2fXDJ027A9izubelDXrCXBpNA/edit?usp=drivesdk) 
+- [**Prepare Data for Exploration Week 3**](https://docs.google.com/document/d/1KwVuLw5b4-yG3Mrmgd62LoMxvmRBSaxDwR9bFuHabq4/edit?usp=drivesdk) 
+- [**Prepare Data for Exploration Week 4**](https://docs.google.com/document/d/1y5QOWAEIfIP98soglclZYXPl73z9bv5qtm5vRRfnjNQ/edit?usp=drivesdk) 
+- [**Prepare Data for Exploration Week 5**](https://docs.google.com/document/d/1TXC7TQ0v7AV--jdqULXm0D-KSXFijIZq5HAL_vkbU4E/edit?usp=drivesdk) 
 
 
 ## Data-Analysis-with-R-Programming
