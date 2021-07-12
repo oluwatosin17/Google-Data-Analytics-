@@ -33,6 +33,12 @@
 - [**Analyze Data to Answer Questions Week 2&3**](https://docs.google.com/document/d/19tP2GCZTlqPR8Q1FBVDcfhvNeZriPgZlPuyFJXdkTvw/edit?usp=sharing)
 - [**Analyze Data to Answer Questions Week 4**](https://docs.google.com/document/d/1Z0dAzRg2iZMI0AKkF8jA1TpKO0vjgNgUidSBBgXdhR4/edit?usp=sharing)
 
+## Share Data Through the Art of Visualization 
+- [**Share Data Through the Art of Visualization Week 1**](https://docs.google.com/document/d/1tr5TzwYcY1YKAXJklI2rt90UJzb1BFGKwI8-MyqRqCY/edit?usp=sharing)
+- [**Share Data Through the Art of Visualization Week 2**](https://docs.google.com/document/d/1Nrsw5MOh55tDTOyOyfzjpa_iZMwCTGMxqFcjTBYwuSA/edit?usp=sharing)
+- [**Share Data Through the Art of Visualization Week 3**](https://docs.google.com/document/d/1C3PVLt5ELlDo3byP69zeiGBoTeeXWTXHgU4ypJMrCT4/edit?usp=sharing)
+- [**Share Data Through the Art of Visualization Week 4**](https://docs.google.com/document/d/1euVkLm-196J88OcCXtpSMSzmSN5e1qUmF9h52d2gbyg/edit?usp=sharing)
+
 
 ## Data-Analysis-with-R-Programming
 - [link](https://github.com/oluwatosin17/Data-Analysis-with-R-Programming-) 
