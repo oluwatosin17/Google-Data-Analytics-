@@ -22,12 +22,16 @@
 - [**Prepare Data for Exploration Week 5**](https://docs.google.com/document/d/1TXC7TQ0v7AV--jdqULXm0D-KSXFijIZq5HAL_vkbU4E/edit?usp=drivesdk) 
 
 ## Process Data from Dirty to Clean 
-- [**Process Data from Dirty to Clean Week 1**](
-https://docs.google.com/document/d/1lgCXcpcdyC5-UEn3PwvQ3ChwP0DFJK5GQvsa8C3fU88/edit?usp=drivesdk) 
+- [**Process Data from Dirty to Clean Week 1**](https://docs.google.com/document/d/1lgCXcpcdyC5-UEn3PwvQ3ChwP0DFJK5GQvsa8C3fU88/edit?usp=drivesdk) 
 - [**Process Data from Dirty to Clean Week 2**](https://docs.google.com/document/d/1a_8a04zQp2kmDiSM697LEYD09kg7rCmtlUKwaJ42jSI/edit?usp=drivesdk) 
 - [**Process Data from Dirty to Clean Week 3**](https://docs.google.com/document/d/16x_ZREbkF6DA6lQeC3Z1y2l4x6LErn3Y8CUciyBNAC8/edit?usp=drivesdk) 
 - [**Process Data from Dirty to Clean Week 4**](https://docs.google.com/document/d/1WkCN1t-8E2hC8IlQ95q5FBKX1PRNOJwZhAWxK3oxZ9s/edit?usp=drivesdk) 
 - [**Process Data from Dirty to Clean Week 5**](https://docs.google.com/document/d/15F177BrhPvmaYrkPuKgwga8O2FrqnWFcC_LVD4IJbo4/edit?usp=drivesdk) 
+
+## Analyze Data to Answer Questions
+- [**Analyze Data to Answer Questions Week 1**](https://docs.google.com/document/d/1ADPW5t3gArnIPtk4xG8FntDX_7g3QIjSZtJ9qqbgdtE/edit?usp=sharing)
+- [**Analyze Data to Answer Questions Week 2&3**](https://docs.google.com/document/d/19tP2GCZTlqPR8Q1FBVDcfhvNeZriPgZlPuyFJXdkTvw/edit?usp=sharing)
+- [**Analyze Data to Answer Questions Week 4**](https://docs.google.com/document/d/1Z0dAzRg2iZMI0AKkF8jA1TpKO0vjgNgUidSBBgXdhR4/edit?usp=sharing)
 
 
 ## Data-Analysis-with-R-Programming
