@@ -1,0 +1,264 @@
+---
+title: "Google Data Analytics Capstone Project"
+subtitle: "Case Study 1: How Does a Bike-Share Navigate Speedy Success?"
+output: html_notebook
+---
+## Scenario
+You work as a junior data analyst in the marketing analyst team of **Cyclistic**, a Chicago-based bike-share firm. The company's future prosperity, according to the director of marketing, hinges on increasing the number of yearly subscribers. As a result, your team is interested in learning how casual riders and annual members use Cyclistic bikes. As a result of these findings,
+
+Your group will devise a new marketing approach to convert casual riders into annual subscribers. However, Cyclistic executives must first be addressed. Your recommendations must be backed up by **compelling data insights and professional data visualizations** in order for them to be approved.
+
+
+
+## Business Tasks
+- How do annual members and casual riders use Cyclistic bikes differently?
+- Why would a non-cyclist purchase a Cyclistic annual membership?
+- Design marketing strategies aimed at converting casual riders into annual members.
+- what impact digital media might have on their marketing strategies
+
+
+## Data Source
+- Divvy Data
+
+### Setting up my environment
+- Importing library `tidyverse` and loading datasets
+```{r}
+library(tidyverse)
+
+```
+
+### Loading Data sets
+```{r}
+tripdata_202004 <- read_csv("202004-divvy-tripdata.csv")
+tripdata_202005 <- read_csv("202005-divvy-tripdata.csv")
+tripdata_202006 <- read_csv("202006-divvy-tripdata.csv")
+tripdata_202007 <- read_csv("202007-divvy-tripdata.csv")
+tripdata_202008 <- read_csv("202008-divvy-tripdata.csv")
+tripdata_202009 <- read_csv("202009-divvy-tripdata.csv")
+tripdata_202010 <- read_csv("202010-divvy-tripdata.csv")
+tripdata_202011 <- read_csv("202011-divvy-tripdata.csv")
+tripdata_202012 <- read_csv("202012-divvy-tripdata.csv")
+tripdata_202101 <- read_csv("202101-divvy-tripdata.csv")
+tripdata_202102 <- read_csv("202102-divvy-tripdata.csv")
+tripdata_202103 <- read_csv("202103-divvy-tripdata.csv")
+tripdata_202104 <- read_csv("202104-divvy-tripdata.csv")
+tripdata_202105 <- read_csv("202105-divvy-tripdata.csv")
+```
+### `Combining all the data together`
+
+```{r}
+tripdata <- rbind(tripdata_202004,
+                  tripdata_202005,
+                  tripdata_202006,
+                  tripdata_202007,
+                  tripdata_202008,
+                  tripdata_202009,
+                  tripdata_202010,
+                  tripdata_202011,
+                  tripdata_202012,
+                  tripdata_202101,
+                  tripdata_202102,
+                  tripdata_202103,
+                  tripdata_202104,
+                  tripdata_202105)
+
+```
+
+### `view the data`
+```{r}
+glimpse(tripdata)
+
+```
+## Data Exploration
+
+```{r}
+table(is.na(tripdata))
+```
+### Columns with missing values
+```{r}
+colSums(is.na(tripdata))
+```
+
+### Missing data would be removed.
+
+```{r}
+tripdata_cleaned <- tripdata[complete.cases(tripdata), ]
+```
+
+### checking the data again
+```{r}
+colSums(is.na(tripdata_cleaned))
+```
+
+### Data with a "started at" value greater than "ended at" will be removed.
+```{r}
+tripdata_cleaned <- tripdata_cleaned %>% 
+  filter(tripdata_cleaned$started_at < tripdata_cleaned$ended_at)
+```
+
+
+```{r}
+glimpse(tripdata_cleaned)
+```
+
+- *Create a column called `ride_length` Calculate the length of each ride by subtracting the column `started_at` from the column `ended_at`* 
+```{r}
+tripdata_cleaned$ride_length <- tripdata_cleaned$ended_at - tripdata_cleaned$started_at
+
+head(tripdata_cleaned$ride_length, 20)
+
+```
+### Import lubridate library
+
+```{r}
+library(lubridate)
+```
+
+
+*Since they are in numeric term we have to convert it.*
+```{r}
+tripdata_cleaned$ride_length <- hms::hms(seconds_to_period(tripdata_cleaned$ride_length))
+head(tripdata_cleaned$ride_length)
+
+```
+
+### Create a column called “day_of_week,” and calculate the day of the week that each ride started
+- wday(x, label = FALSE, abbr = TRUE, ordered = FALSE)
+
+
+
+```{r}
+tripdata_cleaned <- tripdata_cleaned %>% mutate(day_of_week = wday(started_at, label = F))
+```
+
+
+```{r}
+head(tripdata_cleaned)
+```
+
+## Calculation
+- Calculate the mean of ride_length
+- Calculate the max ride_length
+- Calculate the mode of day_of_week
+```{r}
+library(DescTools)
+```
+
+
+```{r}
+tripdata_summary <- tripdata_cleaned %>% summarise(ride_length_mean = mean(ride_length), ride_length_max = max(ride_length), mode_day_of_week = Mode(day_of_week))
+  
+tripdata_summary
+```
+- Calculate the average ride_length for members and casual riders, group by `member_casual`
+```{r}
+average_ride_length <- tripdata_cleaned %>% group_by(member_casual) %>% summarise(average_ride_length = mean(ride_length))
+
+average_ride_length
+```
+
+- Calculate the average ride_length for users by day_of_week. group by `day_of_week`
+
+```{r}
+avg_ride_length <- tripdata_cleaned %>% group_by(day_of_week) %>% summarise(avg_ride_length = mean(ride_length))
+
+avg_ride_length
+```
+- Calculate the number of rides for users by day_of_week 
+
+```{r}
+count_rides <- tripdata_cleaned %>% group_by(day_of_week) %>% summarise(number_rides = n())
+
+count_rides
+```
+
+```{r}
+tripdata_cleaned %>% select(ride_length,member_casual,day_of_week) %>% group_by(day_of_week,member_casual) %>% summarise(mean = mean(ride_length))
+```
+
+
+
+```{r}
+trip <- tripdata_cleaned %>% mutate(weekday = wday(started_at, label = T)) %>% group_by(member_casual, weekday) %>% summarise(number_of_rides = n(), average_duration = mean(ride_length)) %>% arrange(member_casual,weekday)
+
+trip
+```
+## Visualizing number of rides by type
+
+```{r}
+ggplot(data = trip) + aes( x = (weekday), y = number_of_rides, fill = (member_casual))+geom_bar(stat='identity', position = position_dodge(width = 1))+ scale_y_continuous(labels = scales::comma) %>%  labs(title = "Number of Rides by Days and Rider Type",
+       subtitle = "Members versus Casual Users") 
+```
+
+*Saturday has the highest number of rides for both casual riders and members*
+
+## Average Duration
+
+
+```{r}
+ggplot(data = trip) + aes( x = (weekday), y = average_duration, fill = (member_casual))+geom_bar(stat='identity', position = position_dodge(width = 1))+ scale_y_continuous(labels = scales::comma) %>%  labs(title = "Average Ride Duration by Day and Rider Type",
+       subtitle = "Members versus Casual Users") 
+
+```
+*This shows that casual riders prefer longer rides*
+
+```{r}
+trip_add <- tripdata_cleaned %>% group_by(member_casual,rideable_type) %>% summarise(number_of_rides = n(), average_duration = mean(ride_length)) %>% arrange(member_casual,rideable_type)
+
+trip_add
+```
+
+
+
+```{r}
+ggplot(data = trip_add) + aes( x = (rideable_type), y = average_duration, fill = (member_casual))+geom_bar(stat='identity', position = position_dodge(width = 1))+ scale_y_continuous(labels = scales::comma) %>%  labs(title = "Average Ride Duration by  Rideable_type",
+       subtitle = "Members versus Casual Users") 
+```
+
+*The most popular mode of transportation among riders is docked bicycles.*
+
+
+```{r}
+trip_month <- tripdata_cleaned %>% mutate(month = month(started_at, label = T)) %>% group_by(member_casual, month) %>% summarise(number_of_rides = n(), average_duration = mean(ride_length)) %>% arrange(member_casual,month)
+
+trip_month
+
+```
+
+
+```{r}
+ggplot(data = trip_month) + aes( x = (month), y = average_duration, fill = (member_casual))+geom_bar(stat='identity')+ scale_y_continuous(labels = scales::comma) %>%  labs(title = "Average Ride Duration by  Month",
+       subtitle = "Members versus Casual Users") 
+```
+*The longest riders are most active in July.*
+
+
+```{r}
+
+trip_ride <- tripdata_cleaned %>%  mutate(weekday = wday(started_at, label = T)) %>% group_by(member_casual, weekday) %>% summarise(number_of_rides = n()) %>% arrange(member_casual, weekday)
+
+trip_ride
+
+```
+
+
+```{r}
+ggplot(data = trip_ride) + aes( x = (weekday), y = number_of_rides, fill = (member_casual))+geom_bar(stat='identity')+ scale_y_continuous(labels = scales::comma) %>%  labs(title = "Number of Rides by Days",
+       subtitle = "Members versus Casual Users") 
+```
+*I propose starting a marketing campaign in June to encourage casual riders to our Docked Bikes service on weekends, particularly Saturdays.*
+
+
+
+```{r}
+trip_station <- tripdata_cleaned %>%  group_by(member_casual,start_station_name ) %>% summarise(number_of_rides = n(), average_duration = mean(ride_length)) %>% arrange(member_casual,start_station_name) %>%  arrange(desc(number_of_rides,average_duration))
+
+trip_station
+
+```
+
+We should also pay attention to these stations
+
+- Streeter Sr & Grand Ave
+- Lake Shore Dr & Monroe St  
+- Millenium Park.
